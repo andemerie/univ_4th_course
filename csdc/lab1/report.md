@@ -8,6 +8,7 @@ Length of source text | Keyword | Keyword length | Keyword length found | Keywor
 2062 | century | 7 | 7 | cebtugy | 71%
 2631 | century | 7 | 7 | centuhy | 86%
 3585 | century | 7 | 7 | centucy | 86%
+
 ![plot1](./images/Figure_1.png)
 #### Analysis of the dependence of a successful attack by the Kasiski's method **on the length of a keyword**
 Length of source text | Keyword | Keyword length | Keyword length found | Keyword found | Percentage of correctly found keyword symbols
@@ -19,4 +20,5 @@ Length of source text | Keyword | Keyword length | Keyword length found | Keywor
 3585 | globoid | 7 | 7 | globoid | 100%
 3585 | symbolic | 8 | 8 | sytbolic | 86%
 3585 | willpower | 9 | 9 | willpvwer | 86%
+
 ![plot2](./images/Figure_2.png)
