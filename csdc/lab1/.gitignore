@@ -1,4 +1,5 @@
 .idea/
-source.txt
-encrypted.txt
-decrypted.txt
+source/
+encrypted/
+decrypted/
+__pycache__/

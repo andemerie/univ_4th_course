@@ -1,5 +1,6 @@
 alphabet_len = ord('z') - ord('a') + 1
 
+
 def get_encrypted_letter(char, shift):
     encrypted_char = char.lower()
     char_value = ord(encrypted_char)
@@ -33,7 +34,7 @@ def is_letter(char):
     return ord('A') <= ord(char) <= ord('Z') or ord('a') <= ord(char) <= ord('z')
 
 
-def get_shift():
+def get_shift(encrypted):
     letter_frequencies_file = open('letter_frequencies.txt')
     letter_frequencies = []
     for line in letter_frequencies_file:
@@ -91,25 +92,25 @@ def get_decrypted_letter(char, shift):
 
 
 def decrypt(encrypted):
-    shift = get_shift()
+    shift = get_shift(encrypted)
     decrypted = ''
     for char in encrypted:
         decrypted += get_decrypted_letter(char, shift)
     return decrypted
 
 
-source_file = open('source.txt')
+source_file = open('source/source5.txt')
 source = source_file.read()
 source_file.close()
 
 encrypted = encrypt(source)
 
-encrypted_file = open('encrypted.txt', 'w')
+encrypted_file = open('encrypted/task1_encrypted.txt', 'w')
 encrypted_file.write(encrypted)
 encrypted_file.close()
 
 decrypted = decrypt(encrypted)
 
-decrypted_file = open('decrypted.txt', 'w')
+decrypted_file = open('decrypted/task1_decrypted.txt', 'w')
 decrypted_file.write(decrypted)
 decrypted_file.close()
